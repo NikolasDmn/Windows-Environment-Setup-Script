@@ -37,4 +37,4 @@ if (!$?) {
 }
 
 # If WSL and Ubuntu are already installed, update and upgrade Ubuntu packages
-wsl -d Ubuntu -e sudo apt update && sudo apt upgrade -y
+wsl -d Ubuntu -e bash -c "sudo apt update && sudo apt upgrade -y"
